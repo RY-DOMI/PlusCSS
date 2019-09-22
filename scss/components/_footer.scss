@@ -1,0 +1,42 @@
+footer.light {
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+footer.dark {
+    background-color: #3b3b3b;
+    overflow: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 0 !important;
+}
+
+
+footer ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+footer ul li a {
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+footer.dark ul li a {
+    color: #ffffff;
+}
+
+footer.light ul li a {
+    color: #000000;
+}

@@ -1,0 +1,96 @@
+.row:after {
+    display: table;
+    clear: both;
+
+    content: "";
+}
+
+.column {
+    float: left;
+    
+    padding: 12px;
+    width: 25%;
+}
+
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.alert {
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.alert span {
+    font-weight: 700;
+}
+
+.alert#error {
+    background-color: #bb00006b;
+    color: #810000;
+}
+
+.alert#success {
+    background-color: #00922c50;
+    color: #005204;
+}
+
+.alert#warning {
+    background-color: #afa30050;
+    color: #798600;
+}
+
+
+.card {
+    background: #ffffff;
+    margin-top: 22px;
+}
+
+.card img {
+    width: 100%;
+
+    padding: 0;
+}
+
+.card .header {
+    padding: 15px;
+}
+
+.card .header .title {
+    margin-bottom: -10px;
+}
+
+.card .header p.desc {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.card .body {
+    padding: 15px;
+
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .column, .card {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .column, .card {
+        width: 100%;
+        left: 0;
+    }
+}

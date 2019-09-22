@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>PlusCSS - Testing</title>
+
+    <link rel="stylesheet" href="./css/plus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+<header>
+    <nav class="navbar-dark" id="dark-nav">
+        <ul class="items">
+            <li class="nav-item">
+                <a class="active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#help">Help</a>
+            </li>
+            <li class="nav-item right">
+                <a href="#profile">Profile</a>
+            </li>
+            <li class="nav-item icon right">
+                <a href="javascript:void(0);" onclick="responsiveNavbarDark()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar-light" id="light-nav">
+        <ul class="items">
+            <li class="nav-item">
+                <a class="active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#help">Help</a>
+            </li>
+            <li class="nav-item right">
+                <a href="#profile">Profile</a>
+            </li>
+            <li class="nav-item icon right">
+                <a href="javascript:void(0);" onclick="responsiveNavbarLight()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+
+    <p>Paragraph</p>
+
+    <p class="right">.right</p>
+    <p class="left">.left</p>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">                    
+                <img src="https://webdigital.de/wp/wp-content/uploads/mediumrectangle300x250.png" alt="placeholder" />
+
+                <div class="header">
+                    <h2 class="title">Column Title 1</h2>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo natus placeat
+                        fuga nobis consectetur temporibus eum, id sequi est error, totam, impedit expedita laudantium
+                        assumenda suscipit voluptatem aspernatur delectus?</p>
+                </div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore enim necessitatibus hic
+                    deleniti, unde eum architecto soluta nihil voluptatem laborum quae amet magni recusandae laudantium
+                    a, blanditiis atque earum.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="https://webdigital.de/wp/wp-content/uploads/mediumrectangle300x250.png" alt="placeholder" />
+
+                <div class="header">
+                    <h2 class="title">Column Title 2</h2>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo natus placeat
+                        fuga nobis consectetur temporibus eum, id sequi est error, totam, impedit expedita laudantium
+                        assumenda suscipit voluptatem aspernatur delectus?</p>
+                </div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore enim necessitatibus hic
+                    deleniti, unde eum architecto soluta nihil voluptatem laborum quae amet magni recusandae laudantium
+                    a, blanditiis atque earum.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="https://webdigital.de/wp/wp-content/uploads/mediumrectangle300x250.png" alt="placeholder" />
+
+                <div class="header">
+                    <h2 class="title">Column Title 3</h2>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo natus placeat
+                        fuga nobis consectetur temporibus eum, id sequi est error, totam, impedit expedita laudantium
+                        assumenda suscipit voluptatem aspernatur delectus?</p>
+                </div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore enim necessitatibus hic
+                    deleniti, unde eum architecto soluta nihil voluptatem laborum quae amet magni recusandae laudantium
+                    a, blanditiis atque earum.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="https://webdigital.de/wp/wp-content/uploads/mediumrectangle300x250.png" alt="placeholder" />
+
+                <div class="header">
+                    <h2 class="title">Column Title 4</h2>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo natus placeat
+                        fuga nobis consectetur temporibus eum, id sequi est error, totam, impedit expedita laudantium
+                        assumenda suscipit voluptatem aspernatur delectus?</p>
+                </div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore enim necessitatibus hic
+                    deleniti, unde eum architecto soluta nihil voluptatem laborum quae amet magni recusandae laudantium
+                    a, blanditiis atque earum.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="error">
+        <span>Error!</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ex similique odit delectus mollitia accusantium minima iure, illo error et ipsam hic voluptatibus. Nam nemo placeat beatae et, odio repellat.
+    </div>
+    <div class="alert" id="success">
+        <span>Success!</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ex similique odit delectus mollitia accusantium minima iure, illo error et ipsam hic voluptatibus. Nam nemo placeat beatae et, odio repellat.
+    </div>
+    <div class="alert" id="warning">
+        <span>Warning!</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ex similique odit delectus mollitia accusantium minima iure, illo error et ipsam hic voluptatibus. Nam nemo placeat beatae et, odio repellat.
+    </div>
+</body>
+<footer class="dark">
+    <ul class="links">
+        <li class="footer-link">
+            <a href="#imprint">Imprint</a>
+        </li>
+        <li class="footer-link">
+            <a href="#privacy">Policy privacy</a>
+        </li>
+    </ul>
+    <ul class="social-links">
+        <li class="social-link">
+            <a href="https://www.twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+<footer class="light">
+    <ul class="links">
+        <li class="footer-link">
+            <a href="#imprint">Imprint</a>
+        </li>
+        <li class="footer-link">
+            <a href="#privacy">Policy privacy</a>
+        </li>
+    </ul>
+    <ul class="social-links">
+        <li class="social-link">
+            <a href="https://www.twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<script>
+    function responsiveNavbarDark() {
+        var x = document.getElementById("dark-nav");
+        if (x.className === "navbar-dark") {
+            x.className += " resp";
+        } else {
+            x.className = "navbar-dark";
+        }
+    }
+    function responsiveNavbarLight() {
+        var x = document.getElementById("light-nav");
+        if (x.className === "navbar-light") {
+            x.className += " resp";
+        } else {
+            x.className = "navbar-light";
+        }
+    }
+</script>
+</html>

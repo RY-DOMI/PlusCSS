@@ -1,0 +1,21 @@
+{
+  "name": "pluscss",
+  "version": "1.0.0",
+  "description": "This a simple css framework with many features.",
+  "main": " ",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/plus.scss   public/css/plus.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "plus"
+  ],
+  "author": "Dominik Auer",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
